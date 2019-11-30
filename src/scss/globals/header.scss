@@ -1,0 +1,151 @@
+header {
+	background-color: #121212;
+
+	.top_menu {
+		// background: #0e0e0e;
+		background   : #bcbcbc;
+		display      : flex;
+		line-height  : 50px;
+
+		.container {
+			display: flex;
+
+			.top-left {
+				width   : 50%;
+				position: relative;
+				height  : 50px;
+				display : flex;
+
+				.box-icon {
+					position  : relative;
+					top       : 50%;
+					transform : translateY(-50%);
+					background: #0e0e0e;
+					width     : 30px;
+					height    : 30px;
+					margin    : 0px 10px;
+
+					img.svg {
+						width    : 30px;
+						height   : 30px;
+						position : absolute;
+						top      : 50%;
+						left     : 50%;
+						transform: translate(-50%, -50%);
+						font-size: 14px;
+						padding  : 5px;
+					}
+				}
+
+				p {
+					font-family: "Open Sans", Helvetica, Arial, sans-serif;
+					font-size  : 12px;
+					margin     : 0px 10px;
+				}
+			}
+
+			.top-right {
+				width          : 50%;
+				display        : flex;
+				justify-content: flex-end;
+
+				a {
+					font-family: "Open Sans", Helvetica, Arial, sans-serif;
+					font-size  : 12px;
+					margin     : 0px 10px;
+
+					span {
+						font-weight: bold;
+					}
+				}
+
+				.search {
+					img.svg {
+						margin-left: 30px;
+						width      : 12px;
+						height     : 14px;
+						color      : white;
+					}
+				}
+			}
+		}
+	}
+
+	.container {
+		.logo_header {
+			display    : flex;
+			background : #121212;
+			height     : 118px;
+			line-height: 118px;
+
+			.nav-menu {
+				display    : flex;
+				margin-left: auto;
+
+				a {
+					font-family   : "Oswald", Helvetica, Arial, sans-serif;
+					padding       : 0px 12px;
+					color         : white;
+					letter-spacing: 5px;
+					font-size     : 11px;
+					font-weight   : 700;
+
+					&:hover {
+						color: #ab8e69;
+					}
+
+					span {
+						color: #ab8e69;
+					}
+				}
+			}
+
+			.promotions {
+				margin: 0px 40px;
+
+				a {
+					position      : relative;
+					font-family   : "Oswald", Helvetica, Arial, sans-serif;
+					padding       : 16px 25px;
+					letter-spacing: 5px;
+					font-size     : 11px;
+					color         : black;
+					background    : #ab8e69;
+					font-weight   : 600;
+					
+
+					&:hover {
+						background: #866f50;
+						transition: .2s ease-in-out;
+					}
+				}
+			}
+
+			.cart {
+				position: relative;
+				width   : 30px;
+				height  : 30px;
+
+				.cart-icon {
+					width : 28px;
+					height: 32px;
+				}
+
+				.number-icon {
+					position: absolute;
+					top     : -13%;
+					left    : -22.8%;
+
+					span {
+						background   : #ab8e69;
+						color        : white;
+						padding      : 0px 5px;
+						border-radius: 10px;
+
+					}
+				}
+
+			}
+		}
+	}
+}

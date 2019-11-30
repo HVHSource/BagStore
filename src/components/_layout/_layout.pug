@@ -1,0 +1,36 @@
+block var
+
+doctype html
+
+html(lang="en")
+	head
+		title #{title}
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel="stylesheet", href="./css/core.min.css")
+		link(rel="stylesheet", href="./css/main.min.css")
+	body
+		#fb-root
+		#loading
+			.logo-loader
+				img(src="./assets/images/icons/loading.svg", alt="")
+			.progstat-wrapper Loading:
+				span#progstat 0
+				| %
+			#progress
+		//- main content
+		block header
+			include _header.pug
+		main
+			block banner,breadcrumb
+			block main
+			#js-page-verify(class=bodyClass hidden)
+		block footer
+			include _footer.pug
+		//- include scripts
+		script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyCHvmyTralDp2Y0m7zEiN185u1vtArcC5s&libraries=places")
+		//- script(type="text/javascript", src='https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3')
+		block scripts
+		script(type="text/javascript", src="./js/core.min.js")
+		script(type="text/javascript", src="./js/main.min.js")

@@ -1,0 +1,267 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log(\"$1\");",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	// Javascript, typescript
+	"arrow-function": {
+		"scope": "javascript,typescript",
+		"prefix": "afnc",
+		"body": [
+			"($1) => {",
+			"\t$0",
+			"}"
+		],
+	},
+	"function": {
+		"scope": "javascript,typescript",
+		"prefix": "fnc",
+		"body": [
+			"function $1($2) {",
+			"\t$0",
+			"}"
+		],
+	},
+	"DOMContentLoaded": {
+		"scope": "javascript,typescript",
+		"prefix": "ready",
+		"body": [
+			"document.addEventListener('DOMContentLoaded', () => {",
+			"\t$0",
+			"});"
+		],
+	},
+
+	// Pug,jade
+	"lazyload": {
+		"scope": "pug,html,jade",
+		"prefix": "imgl",
+		"body": [
+			"img.lazyload(data-src='$1', alt='$2')",
+		]
+	},
+	"object-fit-cover": {
+		"scope": "pug,html,jade",
+		"prefix": "imgo",
+		"body": [
+			"img.ofc.lazyload(data-src='$1', alt='$2')",
+		]
+	},
+
+	// Sass, css
+	"get-color": {
+		"scope": "css,less,scss",
+		"prefix": "clg",
+		"body": [
+			"map-get(\\$mau, $0)",
+		]
+	},
+	"media-up": {
+		"scope": "css,less,scss",
+		"prefix": "mdu",
+		"body": [
+			"@media (min-width: $1) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"media-upsm": {
+		"scope": "css,less,scss",
+		"prefix": "mdusm",
+		"body": [
+			"@media (min-width: 576px) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"media-upmd": {
+		"scope": "css,less,scss",
+		"prefix": "mdumd",
+		"body": [
+			"@media (min-width: 768px) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"media-uplg": {
+		"scope": "css,less,scss",
+		"prefix": "mdulg",
+		"body": [
+			"@media (min-width: 1025px) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"media-upxl": {
+		"scope": "css,less,scss",
+		"prefix": "mduxl",
+		"body": [
+			"@media (min-width: 1200px) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"media-upxxl": {
+		"scope": "css,less,scss",
+		"prefix": "mduxxl",
+		"body": [
+			"@media (min-width: 1360px) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"media-down": {
+		"scope": "css,less,scss",
+		"prefix": "mdd",
+		"body": [
+			"@media (max-width: $1) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"media-downsm": {
+		"scope": "css,less,scss",
+		"prefix": "mddsm",
+		"body": [
+			"@media (max-width: 575.98px) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"media-downmd": {
+		"scope": "css,less,scss",
+		"prefix": "mddmd",
+		"body": [
+			"@media (max-width: 767.98px) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"media-downlg": {
+		"scope": "css,less,scss",
+		"prefix": "mddlg",
+		"body": [
+			"@media (max-width: 1024.98px) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"media-downxl": {
+		"scope": "css,less,scss",
+		"prefix": "mddxl",
+		"body": [
+			"@media (max-width: 1199.98px) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"media-downxxl": {
+		"scope": "css,less,scss",
+		"prefix": "mddxxl",
+		"body": [
+			"@media (max-width: 1359.98px) {",
+			"\t$0",
+			"}"
+		]
+	},
+	"typography": {
+		"scope": "css,less,scss",
+		"prefix": "f",
+		"body": [
+			"font-size: $1;",
+			"font-weight: $2;",
+			"color: $3;",
+			"$0"
+		]
+	},
+	"translateX": {
+		"scope": "css,less,scss",
+		"prefix": "tranx",
+		"body": [
+			"transform: translateX($1);",
+			"$0"
+		]
+	},
+	"translateY": {
+		"scope": "css,less,scss",
+		"prefix": "trany",
+		"body": [
+			"transform: translateY($1);",
+			"$0"
+		]
+	},
+	"translate": {
+		"scope": "css,less,scss",
+		"prefix": "tranf",
+		"body": [
+			"transform: translate($1);",
+			"$0"
+		]
+	},
+	"flex-center": {
+		"scope": "css,less,scss",
+		"prefix": "fcc",
+		"body": [
+			"display: flex;",
+			"justify-content: center;",
+			"align-items: center;"
+		]
+	},
+	"uppercase": {
+		"scope": "css,less,scss",
+		"prefix": "tup",
+		"body": [
+			"text-transform: uppercase;",
+		]
+	},
+	"transition": {
+		"scope": "css,less,scss",
+		"prefix": "tsn",
+		"body": [
+			"transition: all .3s ease-out;",
+		]
+	},
+	"line-clamp": {
+		"scope": "css,less,scss",
+		"prefix": "lcl",
+		"body": [
+			"overflow: hidden;",
+			"text-overflow: ellipsis;",
+			"display: -webkit-box;",
+			"-webkit-box-orient: vertical;",
+			"-webkit-line-clamp: $1;",
+			"height: $2;$0",
+		]
+	},
+	"col-auto": {
+		"scope": "css,less,scss",
+		"prefix": "colat",
+		"body": [
+			"flex: 0 0 auto;",
+			"width: auto;",
+			"max-width: 100%;",
+		]
+	},
+	"col": {
+		"scope": "css,less,scss",
+		"prefix": "col",
+		"body": [
+			"flex-basis: 0;",
+			"flex-grow: 1;",
+			"max-width: 100%;",
+		]
+	},
+}

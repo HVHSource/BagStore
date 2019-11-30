@@ -1,0 +1,23 @@
+{
+  "name": "gulp-html",
+  "description": "transpile pug, sass, js(es6) => html, css(w/ added prefix, auto-sorted css, minified), js(babeled, minified)",
+  "main": "gulpfile.babel.js",
+  "authors": [
+    "hoangviet.hung.009@"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.4.1",
+    "fancybox": "3.5.7",
+    "swiper": "4.5.0",
+    "wow": "wowjs#^1.1.2",
+    "bootstrap": "^4.3.1"
+  }
+}
